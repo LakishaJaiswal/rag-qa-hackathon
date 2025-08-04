@@ -1,0 +1,12 @@
+Multi-Factor Authentication (MFA) is a security process that requires users to provide two or more verification factors to access a resource such as an application or online account.
+
+MFA methods include:
+1. Something you know (password, PIN)
+2. Something you have (smartphone, security token)
+3. Something you are (fingerprint, facial recognition)
+
+MFA significantly reduces the risk of unauthorized access, even if a password is compromised.
+
+Examples of MFA:
+- Logging into Gmail using a password + OTP sent to your phone.
+- Using an authenticator app like Google Authenticator.

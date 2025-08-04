@@ -1,0 +1,9 @@
+langchain
+transformers
+torch
+sentence-transformers
+chromadb
+faiss-cpu
+tqdm
+python-dotenv
+gradio  # optional, only if you're using the Gradio app

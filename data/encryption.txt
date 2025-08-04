@@ -1,0 +1,27 @@
+Encryption converts readable data into coded format to prevent unauthorized access.
+Only users with the correct decryption key can access the information.
+It protects sensitive data in storage and during transmission.
+Common encryption methods include AES, RSA, and SSL/TLS.
+Encryption is essential for secure communication and data privacy.
+
+Encryption is the process of converting plaintext data into an unreadable format called ciphertext. This ensures that only authorized users can access the original information.
+
+There are two main types of encryption:
+1. **Symmetric encryption** – The same key is used for both encryption and decryption. Example: AES (Advanced Encryption Standard).
+2. **Asymmetric encryption** – Uses a public key to encrypt and a private key to decrypt. Example: RSA.
+
+Encryption is essential for:
+- **Data privacy**: Protects personal and sensitive information from unauthorized access.
+- **Secure communication**: Ensures confidentiality over the internet (e.g., HTTPS).
+- **Compliance**: Helps meet regulatory standards like GDPR, HIPAA, and PCI-DSS.
+
+Common use cases:
+- Email encryption (e.g., PGP)
+- Secure file storage
+- Encrypted messaging apps (e.g., Signal, WhatsApp)
+- Database encryption in enterprises
+
+Best practices:
+- Use strong encryption algorithms like AES-256.
+- Manage and store keys securely (e.g., Hardware Security Modules).
+- Regularly update encryption protocols to prevent exploitation.

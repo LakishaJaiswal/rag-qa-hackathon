@@ -1,0 +1,19 @@
+Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions.
+
+Retrieval-Augmented Generation (RAG) is a technique that combines document retrieval with generative models to produce factually grounded responses.
+
+OpenAI's GPT models are a type of transformer-based language models capable of generating human-like text.
+
+Vector embeddings are numerical representations of text that preserve semantic meaning and are used for similarity search.
+
+FAISS is a library developed by Facebook AI that enables efficient similarity search over large datasets of vector embeddings.
+
+Prompt engineering is the practice of designing inputs (prompts) that guide the behavior of a language model toward a specific goal.
+
+Semantic search improves traditional keyword search by understanding the context and meaning of the query.
+
+Large Language Models (LLMs) can hallucinate – i.e., generate confident-sounding but factually incorrect information, making grounding important.
+
+LangChain is a popular framework for building applications that use language models with external data or tools.
+
+Knowledge grounding ensures that model outputs can be traced back to verified source documents.

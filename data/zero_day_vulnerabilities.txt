@@ -1,0 +1,15 @@
+A zero-day vulnerability is a flaw in software that is unknown to the vendor and has not been patched. Hackers exploit it before the developer can fix it.
+
+Zero-day attack lifecycle:
+1. Discovery by attacker.
+2. Exploitation before a patch exists.
+3. Patch development after discovery.
+
+Examples:
+- 2021: Microsoft Exchange Server zero-days exploited by Hafnium group.
+- 2017: EternalBlue exploit (used in WannaCry ransomware).
+
+Defense:
+- Keep systems updated.
+- Use behavior-based threat detection.
+- Limit privileges on systems.

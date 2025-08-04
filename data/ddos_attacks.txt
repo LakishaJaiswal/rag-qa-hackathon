@@ -1,0 +1,16 @@
+A Distributed Denial of Service (DDoS) attack attempts to make an online service unavailable by overwhelming it with traffic from multiple sources.
+
+Types of DDoS attacks:
+- Volume-based: Floods with high traffic (e.g., UDP floods).
+- Protocol-based: Exploits server resources (e.g., SYN floods).
+- Application layer: Targets specific web apps (e.g., HTTP requests).
+
+Signs of DDoS:
+- Slowed website performance.
+- Unavailable services.
+- Traffic spikes from unusual sources.
+
+Prevention:
+- Use a content delivery network (CDN).
+- Enable rate limiting.
+- Deploy DDoS protection tools.

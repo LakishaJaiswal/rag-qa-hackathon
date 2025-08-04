@@ -1,0 +1,18 @@
+A firewall is a network security system that monitors and controls incoming and outgoing traffic based on security rules.
+
+Types of firewalls:
+- Packet-filtering firewall: Inspects packets and allows/discards based on rules.
+- Stateful inspection firewall: Tracks active connections and filters traffic.
+- Proxy firewall: Filters traffic at the application level.
+- Next-generation firewall (NGFW): Combines traditional firewall with intrusion prevention and other features.
+
+Benefits:
+- Blocks unauthorized access.
+- Protects against certain types of malware and attacks.
+- Can log and analyze traffic.
+
+A firewall is a security system that monitors and controls network traffic.
+It acts as a barrier between trusted and untrusted networks.
+Firewalls can block unauthorized access and prevent data leaks.
+They are available as hardware or software-based tools.
+Configuring firewalls correctly is crucial for network protection.

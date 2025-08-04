@@ -1,0 +1,18 @@
+Ransomware is a type of malicious software designed to block access to a computer system or data, typically by encrypting it, until a ransom is paid. It spreads through email attachments, malicious downloads, or exploiting system vulnerabilities.
+
+Common types of ransomware:
+- Crypto ransomware: Encrypts files and demands payment for decryption.
+- Locker ransomware: Locks users out of their devices entirely.
+- Scareware: Fake software pretending to find issues and demanding money.
+
+Prevention tips:
+- Regularly back up important data.
+- Avoid clicking on unknown links or downloading suspicious attachments.
+- Install security software and keep it updated.
+- Disable macros in Microsoft Office files by default.
+
+Ransomware is a type of malware that encrypts data and demands payment.
+Victims must pay a ransom to regain access to their files.
+It spreads through phishing emails, exploits, or malicious downloads.
+Paying the ransom does not guarantee recovery of files.
+Regular backups and patching systems help protect against ransomware.

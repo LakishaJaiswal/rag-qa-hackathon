@@ -1,0 +1,12 @@
+Social engineering is the art of manipulating people into giving up confidential information. It exploits human psychology rather than technical vulnerabilities.
+
+Common social engineering techniques:
+- Pretexting: Creating a fabricated scenario to steal data.
+- Baiting: Leaving infected USBs or files to lure users.
+- Tailgating: Gaining physical access by following authorized personnel.
+- Impersonation: Pretending to be someone trustworthy.
+
+Prevention tips:
+- Be cautious of unsolicited requests for sensitive information.
+- Verify identities through alternate channels.
+- Educate employees about social engineering tactics.

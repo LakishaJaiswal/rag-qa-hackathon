@@ -1,0 +1,20 @@
+Phishing is a cyber attack that attempts to trick individuals into giving away sensitive information such as usernames, passwords, and credit card details by pretending to be a trustworthy entity. It often involves fake emails or websites that look legitimate.
+
+There are several types of phishing:
+1. Email Phishing – Fake emails pretending to be from reputable companies.
+2. Spear Phishing – Targeted attacks on specific individuals or organizations.
+3. Whaling – Attacks targeting high-profile individuals like executives.
+4. Smishing – Phishing through SMS.
+5. Vishing – Voice call phishing.
+
+To prevent phishing:
+- Never click on suspicious links.
+- Verify email addresses and website URLs.
+- Use multi-factor authentication.
+- Keep software up to date.
+
+Phishing is a cyber attack that tricks people into revealing sensitive information.
+Attackers impersonate trusted entities via email or messages.
+Victims may be asked to click on fake links or enter login details.
+Phishing can lead to identity theft, financial loss, or data breaches.
+Awareness training and email filtering can reduce phishing risks.
