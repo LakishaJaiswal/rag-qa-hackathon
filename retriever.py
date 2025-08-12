@@ -1,20 +1,29 @@
-# retriever.py
-
+import os
+import glob
+import torch
 from sentence_transformers import SentenceTransformer, util
 
 class SemanticRetriever:
-    def __init__(self, documents):
-        self.documents = documents
+    def __init__(self, data_folder):
+        self.data_folder = data_folder
+        self.documents = []
         self.model = SentenceTransformer('all-MiniLM-L6-v2')
-        self.doc_embeddings = self.model.encode(documents, convert_to_tensor=True)
+        self.embeddings = []
+        self.load_documents()
 
-    def retrieve(self, query, top_k=3):
+    def load_documents(self):
+        for filepath in glob.glob(os.path.join(self.data_folder, "*.txt")):
+            filename = os.path.basename(filepath)
+            with open(filepath, "r", encoding="utf-8") as f:
+                text = f.read().strip()
+            self.documents.append({"filename": filename, "content": text})
+            emb = self.model.encode(text, convert_to_tensor=True)
+            self.embeddings.append(emb)
+        self.embeddings = torch.stack(self.embeddings)
+
+    def retrieve(self, query, top_k=5):
         query_embedding = self.model.encode(query, convert_to_tensor=True)
-        hits = util.semantic_search(query_embedding, self.doc_embeddings, top_k=top_k)[0]
-
-        results = []
-        for hit in hits:
-            doc = self.documents[hit['corpus_id']]
-            score = hit['score']
-            results.append((doc, score))
+        scores = util.cos_sim(query_embedding, self.embeddings)[0].cpu().numpy()
+        top_indices = scores.argsort()[::-1][:top_k]
+        results = [self.documents[i] for i in top_indices]
         return results
