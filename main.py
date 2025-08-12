@@ -1,45 +1,29 @@
-# main.py
-
 from retriever import SemanticRetriever
 from generator import AnswerGenerator
-import os
+import re
 
-def load_all_texts(folder_path):
-    documents = []
-    for filename in os.listdir(folder_path):
-        if filename.endswith('.txt'):
-            file_path = os.path.join(folder_path, filename)
-            with open(file_path, 'r', encoding='utf-8') as f:
-                # Split each file into docs (double newline as separator)
-                docs = f.read().strip().split('\n\n')
-                documents.extend(docs)
-    return documents
+def highlight_keywords(text):
+    keywords = ["encryption", "malware", "phishing", "data privacy", "security", "cybersecurity", "attack", "protection"]
+    for kw in keywords:
+        text = re.sub(rf"(?i)({kw})", r"\033[1m\1\033[0m", text)  # ANSI bold
+    return text
 
 def main():
-    # 1. Load all text documents from data folder
-    data_folder = 'data'
-    documents = load_all_texts(data_folder)
-
-    # 2. Initialize retriever and generator
-    retriever = SemanticRetriever(documents)
+    retriever = SemanticRetriever("data")
     generator = AnswerGenerator()
 
-    # 3. Take user input
-    print("\n📌 Retrieval-Augmented Q&A System\n")
-    query = input("Ask a question:\n> ")
+    print("Ask your questions (type 'exit' to quit):")
+    while True:
+        query = input("> ").strip()
+        if query.lower() == "exit":
+            break
 
-    # 4. Retrieve relevant documents
-    relevant_docs = retriever.retrieve(query, top_k=3)
+        docs = retriever.retrieve(query, top_k=5)
+        answer, sources = generator.generate_answer(query, docs)
 
-    # 5. Generate the answer
-    final_answer = generator.generate_answer(query, relevant_docs)
+        print("\n💬 Final Answer:\n")
+        print(highlight_keywords(answer))
+        print(f"\n📄 Source(s): {sources}\n")
 
-    # 6. Show results
-    print("\n📄 Retrieved Contexts:")
-    for i, (doc, score) in enumerate(relevant_docs, 1):
-        print(f"\nDoc {i} [Score: {score:.4f}]:\n{doc}")
-
-    print("\n💬 Final Answer:\n", final_answer)
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
